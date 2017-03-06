@@ -85,12 +85,37 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="title: sortdate: 2017 - 03 - 06 14: 18: 40tags: 算法
+-- -
+
+排序算法有内部排序和外部排序， 内部排序是数据记录在内存中进行排序， 而外部排序是因排序的数据很大， 一次不能容纳全部排序记录， 在排序过程中要访问外存。
+本文的八大排序是内部排序。
+1、 插入排序 - 直接插入排序
+使用java实现：
+123456789101112public s">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Yakir">
-<meta property="og:url" content="http://sunsoan.github.io/index.html">
+<meta property="og:url" content="http://sunsoan.github.io/2017/03/06/sort/index.html">
 <meta property="og:site_name" content="Yakir">
+<meta property="og:description" content="title: sortdate: 2017 - 03 - 06 14: 18: 40tags: 算法
+-- -
+
+排序算法有内部排序和外部排序， 内部排序是数据记录在内存中进行排序， 而外部排序是因排序的数据很大， 一次不能容纳全部排序记录， 在排序过程中要访问外存。
+本文的八大排序是内部排序。
+1、 插入排序 - 直接插入排序
+使用java实现：
+123456789101112public s">
+<meta property="og:updated_time" content="2017-03-06T08:24:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yakir">
+<meta name="twitter:description" content="title: sortdate: 2017 - 03 - 06 14: 18: 40tags: 算法
+-- -
+
+排序算法有内部排序和外部排序， 内部排序是数据记录在内存中进行排序， 而外部排序是因排序的数据很大， 一次不能容纳全部排序记录， 在排序过程中要访问外存。
+本文的八大排序是内部排序。
+1、 插入排序 - 直接插入排序
+使用java实现：
+123456789101112public s">
 
 
 
@@ -118,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://sunsoan.github.io/"/>
+  <link rel="canonical" href="http://sunsoan.github.io/2017/03/06/sort/"/>
 
 
 
 
 
-  <title> Yakir </title>
+  <title>  | Yakir </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -149,9 +174,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -267,9 +290,6 @@
             
               
                 
-                <a class="post-title-link" href="/2017/03/06/sort/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -320,9 +340,7 @@
       
 
       
-        
-          
-            <hr>
+        <hr>
 <p>title: sort<br>date: 2017 - 03 - 06 14: 18: 40<br>tags: 算法</p>
 <pre><code>-- -
 
@@ -335,16 +353,20 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertsort</span><span class="params">(arr)</span>:</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(l)):</div><div class="line">        temp = arr[i]</div><div class="line">        j = i</div><div class="line">        <span class="keyword">while</span> j&gt;<span class="number">0</span> <span class="keyword">and</span> temp&lt;arr[j<span class="number">-1</span>]:</div><div class="line">            arr[j] = arr[j<span class="number">-1</span>]</div><div class="line">        </div><div class="line">        arr[j] = temp</div><div class="line">    <span class="keyword">return</span> arr</div></pre></td></tr></table></figure>
 <p>使用javascript实现</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertsort</span>(<span class="params">arr</span>)</span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>; i&lt;arr.length; i++)&#123;</div><div class="line">        <span class="keyword">var</span> temp = arr[i];</div><div class="line">        <span class="keyword">var</span> j;</div><div class="line">        <span class="keyword">for</span>(j = i<span class="number">-1</span>; j&gt;=<span class="number">0</span>&amp;&amp;arr[j]&gt;temp; j--)&#123;</div><div class="line">            arr[j+<span class="number">1</span>] = arr[j];</div><div class="line">        &#125;</div><div class="line">        arr[j] = temp;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div><div class="line"></div><div class="line">希尔排序：</div><div class="line"></div><div class="line">希尔(shell)排序又称为缩小增量排序，他是一种插入排序。是直接插入排序算法的一种威力加强版。该方法因DL.Shell于<span class="number">1959</span>年提出而得名。</div><div class="line">希尔排序的基本思想是：</div><div class="line"><span class="number">1</span>、把记录按步长gap分组，对于每组记录采用直接插入排序方法进行排序。</div><div class="line"><span class="number">2</span>、随着步长逐渐减小，所分成的组包含的记录越来越多，当步长的值减小到<span class="number">1</span>时，整个数据合成为一组。构成一组有序记录完成排序。</div><div class="line"></div><div class="line"><span class="string">``</span><span class="string">`java</span></div><div class="line"></div><div class="line">public void shellSort(int[] list)&#123;</div><div class="line">    int gap = list.length/2;</div><div class="line"></div><div class="line">    while(1&lt;=gap)&#123;</div><div class="line">        for(int i = gap; i&lt;list.length; i++)&#123;</div><div class="line">            int j = 0;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -353,268 +375,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://sunsoan.github.io/2017/03/05/testPage/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yakir.Wang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yakir">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/05/testPage/" rel="next" title="testPage">
+                <i class="fa fa-chevron-left"></i> testPage
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/05/testPage/" itemprop="url">
-                  testPage
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T19:49:30+08:00">
-                2017-03-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>测试图片<br><img src="http://omcaxiq75.bkt.clouddn.com/psb.jpg" border="0"><br>测试视频</p>
-<p><video id="video" width="100%" height="100%" controls="controls" preload="none"><br>      <source id="mp4" src="http://omcaxiq75.bkt.clouddn.com/cR9WaFgRdFyAVxLJAAAACibFkKw577_720P-1.mp4" type="video/mp4"></video></p>
-<p><br>测试代码<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">a = range(<span class="number">1</span>,<span class="number">11</span>)</div><div class="line">b = range(<span class="number">1</span>,<span class="number">10</span>)</div><div class="line">c =  sum([item <span class="keyword">for</span> item <span class="keyword">in</span> a <span class="keyword">if</span> item <span class="keyword">in</span> b])</div><div class="line"><span class="keyword">print</span> c</div></pre></td></tr></table></figure></p>
-<p>测试音频</p>
-<audio src="http://omcaxiq75.bkt.clouddn.com/Yann%20Tiersen%20-%20Comptine%20D%27un%20Autre%20%C3%89t%C3%A9,%20L%27apr%C3%A8s-Midi.mp3" controls="controls"><br></audio>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://sunsoan.github.io/2017/03/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yakir.Wang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yakir">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/05/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T14:52:43+08:00">
-                2017-03-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
           
           </div>
@@ -622,6 +414,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -798,6 +594,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
